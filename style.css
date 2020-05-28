@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background: #696969;
+}
+p{
+    color: #524c56;
+    font-size: 160%;
+    line-height: 155%;
+    padding: 3%;
+    text-indent: 2%;
+    text-align: justify;
+}
+h3{
+    font-size: 175%;
+    line-height: 155%;
+    font-weight: 500%;
+    color: #524c56;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+}
+a{
+    color: #524c56;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+a:hover{
+    color: #c3d7df;
+}
+
+img{
+    display:block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: -4px;
+}
+
+#wrapper{
+    /*max-width: 2400px;*/
+    width: 100%;
+   
+
+    margin:0 auto;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+}
+
+#banner-wrapper{
+    width:100%;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+    position: relative;
+   
+}
+
+
+header {
+    width:100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    display: inline;
+}
+
+.header-inner{
+  
+  margin: 0px 80px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+header .logo{
+   letter-spacing: 15px;
+   font-size: 1.3em;
+   padding: 40px;
+   margin: 0;
+   float: left;
+ }
+
+header #logo img {    /* Aqui el logo y la lista se colocan en la parte suoerior izquierda */
+    margin: 20px;
+    float: left;
+    width: 50px;
+}
+
+
+
+/*Navigation*/
+nav{
+    float: right;
+    padding: 0;
+    margin: 30px;
+ 
+}
+
+#menu-icon{
+    display: none; /* para que no se muestre el icono de menu cuando la pantalla esta en tamaño grande */
+    font-size: 50px;
+}
+
+/* SECTION 2*/
+.left-col {
+    float: left;
+    margin: 50px 10px 50px 50px;
+    width: 60%;
+    height: auto;
+    padding: 1%;
+    border: 2px solid;
+  }
+.sidebar {
+    float: right;
+    margin: 50px 0px;
+    width: 32%;
+    height: 500px;
+    padding: 1%;
+  }
+
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: -4px;
+  }
+
+ul{
+    list-style: none; /*se quita los puntos o viñetas de la lista */
+}
+nav ul li {
+    font-size: 150%;
+    display: inline-block; 
+    float: left;
+    padding: 10px 10px 20px 10px;
+    margin: 10px;
+    
+}
+
+nav ul li a{
+    color: white;
+  
+  
+   
+}
+.current {
+    color:#707070;
+}
+
+.res{    /* estructurar one third, dividir en tres partes*/
+    width: 31.5%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.icon-wrap{
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background-color: #6991ac;
+    border-radius: 125px;
+    text-align: center;
+    margin-top: 3%;
+}
+.icon-wrap i{  /* iconos mas grandes y centrados*/
+   text-align: center;
+   color: #fff;
+   font-size: 450%;
+   padding: 20%;
+  
+}
+
+/* artists*/
+.containerA {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+
+.art{
+  text-align: center;
+  padding: 10px 850px;
+  color: red;
+  margin: 50px 50px;
+  display: block;
+  float: left;
+}
+
+ 
+  /*slider*/
+  .slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    
+    padding: 0px 0px;
+    /*align-items: center;*/
+    
+  }
+  
+  .slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+  
+  
+    animation: cambio 20s infinite;
+    
+  }
+  .slider li{
+    width: 100%;
+    list-style: none;
+  }
+  
+  .slider img{
+  width: 100%;
+
+  }
+  
+  @keyframes cambio{
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+  
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+  
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+    
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+  
+  }
+
+
+  /* gallery*/
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0  4px;
+    margin: 50px;
+  
+  }
+
+    
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 2px;
+   
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+
+
+
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+/* footer*/
+  footer {
+    background:black;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .icon-text {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .icon-text-icon {
+    float: left;
+    width: 20%;
+    padding: 4%;
+  }
+  .icon-text-text {
+    float: left;
+    width: 60%;
+    padding: 4% 4% 2% 0;
+    font-size:
+  }
+  
+  .footer-nav {
+    text-align: right;
+  }
+  
+  .footer-nav a {
+    font-size: 160%;
+    color: #c3d7df;
+    font-weight: 300;
+  }
+  
+  .footer-nav a:hover {
+    color: #f5f5f5;
+  }
+  
+  .social {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  .social li {
+    display: inline;
+  }
+  
+  .social i {
+    font-size: 420%;
+    margin: 1%;
+    padding: 5%;
+    color: #c3d7df;
+  }
+  
+  .social i:hover {
+    color: #f5f5f5;
+  }
+  
+  footer.second {
+    border-top: 1px solid #aadcd2;
+    text-align: center;
+    margin: 0;
+  }
+  footer.second p, .second a {
+    text-align: center;
+    color: #fff;
+    font-size: 160%;
+    line-height: 155%;
+  }
